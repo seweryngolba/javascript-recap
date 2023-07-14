@@ -1,25 +1,85 @@
-let firstName = "Pedro";
-let age = 21;
-let student = true;
+// document.getElementById("myButton").onclick = function () {
+//   username = document.getElementById("myText").value;
+//   console.log(username);
+//   document.getElementById("myLabel").innerHTML = "Hello " + username;
+// };
 
-age = age + 1;
+// let age = window.prompt("How old are you ?");
+// age = Number(age);
+// age += 1;
 
-console.log("Hello", firstName);
-console.log("You are", age);
-console.log("Graduated:", student);
+// console.log("Happy birthday! You are", age, "years old");
 
-document.getElementById("p1").innerHTML = "Hello " + firstName;
-document.getElementById("p2").innerHTML = "You are " + age;
-document.getElementById("p3").innerHTML = "Graduated: " + student;
+// let x;
+// let y;
+// let z;
 
-let fruits = 21;
+// x = Number("3.14");
+// y = String(3.14);
+// z = Boolean("pizza");
 
-// fruits = fruits / 2;
+// console.log(x, typeof x);
+// console.log(y, typeof y);
+// console.log(z, typeof z);
 
-let extraFruits = fruits % 3;
+// const pi = 3.14159;
+// let radius;
+// let circumferenece;
 
-console.log(extraFruits);
+// radius = window.prompt("Enter rhe radius of circle");
+// radius = Number(radius);
 
-let result = 1 + 2 * (3 + 4);
+// circumferenece = 2 * pi * radius;
 
-console.log(result);
+// console.log("The circumference is:", circumferenece);
+
+// let x;
+// let y = 5;
+// let z = 9;
+
+//x = Math.round(x);
+
+// x = Math.pow(x, 2);
+
+// let a;
+// let b;
+// let c;
+
+// a = window.prompt("enter side A");
+// a = Number(a);
+
+// b = window.prompt("enter side B");
+// b = Number(b);
+
+// c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+// console.log("Side C:", c);
+
+// document.getElementById("submitButton").onclick = function () {
+//   a = document.getElementById("aTextBox").value;
+//   a = Number(a);
+
+//   b = document.getElementById("bTextBox").value;
+//   b = Number(b);
+
+//   c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+//   document.getElementById("cLabel").innerHTML = "Side C: " + c;
+// };
+
+let count = 0;
+
+document.getElementById("decreaseBtn").onclick = function () {
+  count -= 1;
+  document.getElementById("countLabel").innerHTML = count;
+};
+
+document.getElementById("resetBtn").onclick = function () {
+  count = 0;
+  document.getElementById("countLabel").innerHTML = count;
+};
+
+document.getElementById("increaseBtn").onclick = function () {
+  count += 1;
+  document.getElementById("countLabel").innerHTML = count;
+};
