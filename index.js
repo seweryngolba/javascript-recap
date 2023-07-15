@@ -1,99 +1,38 @@
-// document.getElementById("myButton").onclick = function () {
-//   username = document.getElementById("myText").value;
-//   console.log(username);
-//   document.getElementById("myLabel").innerHTML = "Hello " + username;
-// };
+// let grade = 55;
 
-// let age = window.prompt("How old are you ?");
-// age = Number(age);
-// age += 1;
+// switch (true) {
+//   case grade >= 90:
+//     console.log("You did great!");
+//     break;
+//   case grade >= 80:
+//     console.log("You did good!");
+//     break;
+//   case grade >= 70:
+//     console.log("You did okay!");
+//     break;
+//   case grade >= 60:
+//     console.log("You passed.... barely");
+//     break;
+//   case grade < 60:
+//     console.log("You failed!");
+//     break;
+//   default:
+//     console.log(grade, "is not a letter grade");
+// }
 
-// console.log("Happy birthday! You are", age, "years old");
+// let temp = 15;
+// let sunny = true;
 
-// let x;
-// let y;
-// let z;
+// if (temp > 0 && temp < 30 && sunny) {
+//   console.log("The weather is good ");
+// } else {
+//   console.log("The weather is bad");
+// }
 
-// x = Number("3.14");
-// y = String(3.14);
-// z = Boolean("pizza");
+let userName = "";
 
-// console.log(x, typeof x);
-// console.log(y, typeof y);
-// console.log(z, typeof z);
+while (userName == "" || userName == null) {
+  userName = window.prompt("Enter your name");
+}
 
-// const pi = 3.14159;
-// let radius;
-// let circumferenece;
-
-// radius = window.prompt("Enter rhe radius of circle");
-// radius = Number(radius);
-
-// circumferenece = 2 * pi * radius;
-
-// console.log("The circumference is:", circumferenece);
-
-// let x;
-// let y = 5;
-// let z = 9;
-
-//x = Math.round(x);
-
-// x = Math.pow(x, 2);
-
-// let a;
-// let b;
-// let c;
-
-// a = window.prompt("enter side A");
-// a = Number(a);
-
-// b = window.prompt("enter side B");
-// b = Number(b);
-
-// c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
-
-// console.log("Side C:", c);
-
-// document.getElementById("submitButton").onclick = function () {
-//   a = document.getElementById("aTextBox").value;
-//   a = Number(a);
-
-//   b = document.getElementById("bTextBox").value;
-//   b = Number(b);
-
-//   c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
-
-//   document.getElementById("cLabel").innerHTML = "Side C: " + c;
-// };
-
-// let count = 0;
-
-// document.getElementById("decreaseBtn").onclick = function () {
-//   count -= 1;
-//   document.getElementById("countLabel").innerHTML = count;
-// };
-
-// document.getElementById("resetBtn").onclick = function () {
-//   count = 0;
-//   document.getElementById("countLabel").innerHTML = count;
-// };
-
-// document.getElementById("increaseBtn").onclick = function () {
-//   count += 1;
-//   document.getElementById("countLabel").innerHTML = count;
-// };
-
-let x;
-let y;
-let z;
-
-document.getElementById("rollButton").onclick = function () {
-  x = Math.floor(Math.random() * 6) + 1;
-  y = Math.floor(Math.random() * 6) + 1;
-  z = Math.floor(Math.random() * 6) + 1;
-
-  document.getElementById("xlabel").innerHTML = x;
-  document.getElementById("ylabel").innerHTML = y;
-  document.getElementById("zlabel").innerHTML = z;
-};
+console.log("Hello", userName);
