@@ -29,10 +29,34 @@
 //   console.log("The weather is bad");
 // }
 
-let userName = "";
+// let userName;
 
-while (userName == "" || userName == null) {
-  userName = window.prompt("Enter your name");
+// do {
+//   userName = window.prompt("Enter your name");
+// } while (userName == "");
+
+// console.log("Hello", userName);
+
+// for (let i = 10; i > 0; i--) {
+//   console.log(i);
+// }
+
+// console.log("Happy New Year!");
+
+// for (let i = 1; i <= 20; i++) {
+//   if (i == 13) {
+//     continue;
+//   }
+//   console.log(i);
+// }
+
+let symbol = window.prompt("enter symbol");
+let rows = window.prompt("number of rows");
+let columns = window.prompt("enter number of columns");
+
+for (let i = 1; i <= rows; i++) {
+  for (let j = 1; j <= columns; j++) {
+    document.getElementById("myRectangle").innerHTML += symbol;
+  }
+  document.getElementById("myRectangle").innerHTML += "<br>";
 }
-
-console.log("Hello", userName);
