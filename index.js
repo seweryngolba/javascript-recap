@@ -1,62 +1,33 @@
-// let grade = 55;
+// let fruits = ["banana", "apple", "orange", "mango"];
 
-// switch (true) {
-//   case grade >= 90:
-//     console.log("You did great!");
-//     break;
-//   case grade >= 80:
-//     console.log("You did good!");
-//     break;
-//   case grade >= 70:
-//     console.log("You did okay!");
-//     break;
-//   case grade >= 60:
-//     console.log("You passed.... barely");
-//     break;
-//   case grade < 60:
-//     console.log("You failed!");
-//     break;
-//   default:
-//     console.log(grade, "is not a letter grade");
+// fruits = fruits.sort().reverse();
+
+// for (let fruit of fruits) {
+//   console.log(fruit);
 // }
 
-// let temp = 15;
-// let sunny = true;
+// let fruits = ["apples", "oranges", "bananas"];
+// let vegetables = ["carrots", "onions", "potatoes"];
+// let meats = ["eggs", "chicken", "fish"];
 
-// if (temp > 0 && temp < 30 && sunny) {
-//   console.log("The weather is good ");
-// } else {
-//   console.log("The weather is bad");
-// }
+// let groceryList = [fruits, vegetables, meats];
 
-// let userName;
+// groceryList[2][2] = "steak";
 
-// do {
-//   userName = window.prompt("Enter your name");
-// } while (userName == "");
-
-// console.log("Hello", userName);
-
-// for (let i = 10; i > 0; i--) {
-//   console.log(i);
-// }
-
-// console.log("Happy New Year!");
-
-// for (let i = 1; i <= 20; i++) {
-//   if (i == 13) {
-//     continue;
+// for (let list of groceryList) {
+//   for (let food of list) {
+//     console.log(food);
 //   }
-//   console.log(i);
 // }
 
-let symbol = window.prompt("enter symbol");
-let rows = window.prompt("number of rows");
-let columns = window.prompt("enter number of columns");
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-for (let i = 1; i <= rows; i++) {
-  for (let j = 1; j <= columns; j++) {
-    document.getElementById("myRectangle").innerHTML += symbol;
-  }
-  document.getElementById("myRectangle").innerHTML += "<br>";
-}
+// let maximum = Math.max(...numbers);
+// console.log(maximum);
+
+let class1 = ["jon", "patrick", "sandy"];
+let class2 = ["spiderman", "batman", "magneto"];
+
+class1.push(...class2);
+
+console.log(...class1);
